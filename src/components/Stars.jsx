@@ -12,7 +12,7 @@ export const Stars = () => {
                 return (
                     <label>
                         <input type="radio" name="rating" value={ratingValue} onClick={() => setRating(ratingValue)}/>
-                        <FaStar className="star" size={100}/>
+                        <FaStar className="star" color={ratingValue < rating + 1 ? "#ffc107" : "#e4e5e9"} size={60}/>
                     </label>
                     )
                 })}

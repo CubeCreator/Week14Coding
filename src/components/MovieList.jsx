@@ -13,7 +13,6 @@ export const MovieList = () => {
         <form>
             <Movie/>
 
-            <ReviewList/>
         </form>
     )
 }

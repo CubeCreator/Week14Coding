@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import { Movie } from './components/Movie';
+import React from 'react';
 import { MovieList } from './components/MovieList';
-import { Review } from './components/Review';
-import Stars from './components/Stars';
+import ReviewForm from './components/ReviewForm';
+
 
 
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <MovieList/>
-      <Stars/>
+      <ReviewForm/>
     </div>
   );
 }
