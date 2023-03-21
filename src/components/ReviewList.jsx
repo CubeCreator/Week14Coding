@@ -1,4 +1,4 @@
-
+import React from "react";
 export const ReviewList = () => {
 
     return (
@@ -7,3 +7,5 @@ export const ReviewList = () => {
         </form>
     )
 }
+
+export default ReviewList;

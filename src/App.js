@@ -3,7 +3,7 @@ import './App.css';
 import { Movie } from './components/Movie';
 import { MovieList } from './components/MovieList';
 import { Review } from './components/Review';
-import { ReviewForm } from './componentsReviewForm';
+import Stars from './components/Stars';
 
 
 
@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <MovieList/>
+      <Stars/>
     </div>
   );
 }

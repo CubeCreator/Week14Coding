@@ -1,4 +1,4 @@
-
+import React from "react";
 export const Movie = () => {
 
     return (
@@ -7,3 +7,5 @@ export const Movie = () => {
         </form>
     )
 }
+
+export default Movie;
