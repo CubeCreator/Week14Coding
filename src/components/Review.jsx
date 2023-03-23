@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 export const Review = () => {
     
     return (
@@ -6,12 +6,17 @@ export const Review = () => {
             <label>Name: </label>
             <input type="text" maxlength="16" required name="name-input"/>
             <br/>
-            <label>Review: </label>
-            <input type="text" required name="review-input"/>
             <br/>
-            <input type="submit" value="Submit"/>
+            <label>Review: </label>
+            <textarea rows="8" required name="review-input">
+            </textarea>
+            <br/>
+            <input type="submit" value="Submit" />
         </form>
+        
+        
     )
+    
 }
 
 export default Review;

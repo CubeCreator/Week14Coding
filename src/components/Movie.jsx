@@ -1,17 +1,30 @@
 import React from "react";
-export const Movie = () => {
+export const Movie = ({Title, Image, Genre, AgeRating, Year, Synopsis}) => {
+    console.log(Title)
 
     return (
-        <form>
-            <h1>Movie Title</h1>
-
+        <div>
+            <h1>{Title}</h1>
+            <img src={Image} height="256"/>
             <table>
                 <tr>
-                    <th></th>
-                    <td></td>
+                    <th>Genre: </th>
+                    <td>{Genre}</td>
+                </tr>
+                <tr>
+                    <th>Age Rating: </th>
+                    <td>{AgeRating}</td>
+                </tr>
+                <tr>
+                    <th>Release Date: </th>
+                    <td>{Year}</td>
+                </tr>
+                <tr>
+                    <th>Synopsis: </th>
+                    <td>{Synopsis}</td>
                 </tr>
             </table>
-        </form>
+        </div>
     )
 }
 

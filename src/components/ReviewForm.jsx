@@ -5,12 +5,12 @@ import ReviewList from "./ReviewList.jsx";
 export const ReviewForm = () => {
 
     return (
-        <form>
+        <div>
             <h3>Rate:</h3>
             <Stars/>
             <Review/>
             <ReviewList/>
-        </form>
+        </div>
     )
 }
 
