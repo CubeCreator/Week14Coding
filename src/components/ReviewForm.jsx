@@ -1,13 +1,13 @@
 import React from "react";
-import { Stars } from './Stars.jsx';
 import Review from "./Review.jsx";
 import ReviewList from "./ReviewList.jsx";
+import Stars from "./Stars.jsx";
 export const ReviewForm = ({Reviews}) => {
 
     return (
         <div>
-            <h3>Rate:</h3>
             <Stars/>
+            <h3>Rate:</h3>
             <Review
                 Reviews = {Reviews}
             />

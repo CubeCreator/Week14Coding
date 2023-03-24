@@ -13,13 +13,13 @@ export const ReviewList = (Reviews) => {
                         <th>Review:</th>
                     </tr>
                 </thead>
-                {Reviews.map((reviews, index) => (
+                {/* {Reviews.map((reviews, index) => (
                     <tbody key={index}>
                         <tr>{reviews.starRating}</tr>
                         <tr>{reviews.reviewName}</tr>
                         <tr>{reviews.reviewText}</tr>
                     </tbody>
-                ))}
+                ))} */}
             </table>
         </div>
     )
