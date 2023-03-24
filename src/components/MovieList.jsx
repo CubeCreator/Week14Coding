@@ -6,6 +6,7 @@ import { Movie } from "./Movie";
 import ReviewForm from "./ReviewForm";
 
 
+//Array holding all the Movie Information to be used
 let Movies = [{
     Title: "Puss in Boots: The Last Wish",
     Year: "2022",
@@ -60,8 +61,8 @@ export const MovieList = (props) => {
 
         <div>
             {Movies.map((movie, index) => (
-                <div>
-                    <Movie
+                <div key={index}>
+                    <Movie 
                         Title = {movie.Title}
                         Year = {movie.Year}
                         Image = {movie.Image}
@@ -69,7 +70,9 @@ export const MovieList = (props) => {
                         AgeRating = {movie.AgeRating}
                         Synopsis = {movie.Synopsis}
                     />
-                    <ReviewForm/>
+                    <ReviewForm
+                        Reviews = {movie.Reviews}
+                    />
                 </div>
             ))}
 
