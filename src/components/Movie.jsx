@@ -1,6 +1,5 @@
 import React from "react";
 export const Movie = ({Title, Image, Genre, AgeRating, Year, Synopsis}) => {
-    console.log(Title)
 
     return (
         <div>

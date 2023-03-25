@@ -1,6 +1,7 @@
 import React from "react";
 import "./ReviewList.css"
-export const ReviewList = (Reviews) => {
+import Review from "./Review";
+export const ReviewList = ({Reviews}) => {
 
     return (
         <div>
@@ -13,13 +14,16 @@ export const ReviewList = (Reviews) => {
                         <th>Review:</th>
                     </tr>
                 </thead>
-                {/* {Reviews.map((reviews, index) => (
+                {Reviews.length > 0 ? Reviews.map((reviews, index) => (
                     <tbody key={index}>
-                        <tr>{reviews.starRating}</tr>
-                        <tr>{reviews.reviewName}</tr>
-                        <tr>{reviews.reviewText}</tr>
+                        <Review
+                            reviews = {reviews}
+                            starRating = {Reviews.starRating}
+                            reviewName = {Reviews.reviewName}
+                            reviewText = {Reviews.reviewText}
+                        />
                     </tbody>
-                ))} */}
+                )): <br/> }
             </table>
         </div>
     )
