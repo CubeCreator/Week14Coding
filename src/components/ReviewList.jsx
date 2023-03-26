@@ -1,7 +1,7 @@
 import React from "react";
 import "./ReviewList.css"
 import Review from "./Review";
-export const ReviewList = ({Reviews}) => {
+export const ReviewList = ({Reviews, starRating, reviewName, reviewText}) => {
 
     return (
         <div>
@@ -14,16 +14,17 @@ export const ReviewList = ({Reviews}) => {
                         <th>Review:</th>
                     </tr>
                 </thead>
-                {Reviews.length > 0 ? Reviews.map((reviews, index) => (
+                {/* Do this if the there is stuff in the Reviews Array */}
+                {Reviews.length > 0 ? Reviews.map((Reviews, index) => (
                     <tbody key={index}>
                         <Review
-                            reviews = {reviews}
-                            starRating = {Reviews.starRating}
-                            reviewName = {Reviews.reviewName}
-                            reviewText = {Reviews.reviewText}
+                            reviews = {Reviews}
+                            starRating = {starRating}
+                            reviewName = {reviewName}
+                            reviewText = {reviewText}
                         />
                     </tbody>
-                )): <br/> }
+                )): <tbody/> }
             </table>
         </div>
     )
